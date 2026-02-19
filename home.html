@@ -86,7 +86,58 @@
      </div>
    </section>
 
-   <section id="cashout" class="w-11/12 mx-auto py-5">
+
+
+
+<!-- Add money section  -->
+   <section id="add-money" class="w-11/12 mx-auto py-5">
+        <h2 class="text-xl font-bold mb-5">Add Money</h2>
+         <div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Select Bank</label>
+           <select id="add-money-bank" class="select rounded-full bg-base-200 w-full ">
+                    <option disabled selected>Select a Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="city">City Bank PLC</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="islami">Islami Bank PLC</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="brac">Brac Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="sonali">Sonali Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="janata">Janata Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="madhumoti">Madhumoti Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="standard">Standard Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="dbbl">Dutch Bangla Bank</option>
+                    <option class="hover:bg-green-400 hover:text-white" value="trust"> Trust Bank</option>
+            </select>  
+
+            <br>
+
+
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="add-money-number" type="text"maxlength="11" minlength="11" class="input rounded-full bg-base-200 w-full" placeholder="Enter Bank Account  number" />
+          <br>
+          <label class="label text-neutral font-bold">Amount To Add</label>
+          <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 w-full" placeholder="Enter amount to Add" />
+
+          <br>
+          <label class="label text-neutral font-bold">Pin</label>
+          <input id="add-money-pin"maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 w-full" placeholder="Enter 4 Digit PIN" />
+          
+          <button id="add-money-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
+        </fieldset>
+      </div>
+    </div>
+   </section>
+
+
+
+
+
+
+
+
+
+   <!-- //cashout section  -->
+   <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
     <h2 class="text-xl font-bold mb-5">Cashout</h2>
     <div class="card bg-base-100 w-full shadow rounded-2xl">
       <div class="card-body">
@@ -106,8 +157,9 @@
       </div>
     </div>
    </section>
-
+   <script src="scripts/machine.js"></script>
     <script src="scripts/login.js"> </script>
     <script src="scripts/cashout.js"></script>
+
 </body>
 </html>
