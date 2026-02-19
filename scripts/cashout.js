@@ -28,6 +28,26 @@ document.getElementById('cashout-btn').addEventListener("click",function(){
         alert("Cashout Sucuessfull !!!");
         console.log(newBalance);
       setBalance(newBalance);
+
+
+
+
+
+
+        // 37 number line theke else er aage porjonto aituk kaaj holo transaction er history dekhar joonooooo 
+                //1-history container ke dhore niye ashbo
+                const history = document.getElementById("history-container")
+                //2- new div create korbo
+                const newHistory = document.createElement("div");
+                //3- new div er vitore innerHTML add korbo
+                newHistory.innerHTML=`
+                    <div class="transaction-card p-5 bg-orange-300 text-white rounded">
+                    Cashout ${cashoutAmount} TAKA success to ${cashoutNumber} ,at${new Date()}
+                </div>
+                `
+                //4 - History container er vitore new div ke add korbo
+
+                history.append(newHistory);
     }
     else{
         alert("Invalid PIN");

@@ -22,3 +22,26 @@ function setBalance(value){
     const balanceElement=document.getElementById("balance");
     balanceElement.innerText = value;
 }
+
+
+
+
+
+//machine id > hide all > show the one with the id
+function showOnly(id){
+    
+    const addmoney=document.getElementById("add-money");
+    const cashout=document.getElementById("cashout");
+    const history=document.getElementById("history");
+    console.log(`add money -${addmoney}, Cashout - ${cashout}, History - ${history}`);
+
+    //sobai ke hide kore dibo
+    addmoney.classList.add("hidden");
+    cashout.classList.add("hidden");
+    history.classList.add("hidden");
+
+
+    //id wala element ke show korbo
+    const selected=document.getElementById(id);
+    selected.classList.remove("hidden");
+}
