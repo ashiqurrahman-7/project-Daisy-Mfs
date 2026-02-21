@@ -15,7 +15,7 @@ const btns=document.getElementById("login-btn").addEventListener('click',functio
 
         //ay line dewar maane hole number and pin match hole se home page nia jaaabe ..  (replace use korle seita aager page er data te fire jete pare na but assign use korle login page to home page then abar home page e move korte paaare )
         // window.location.replace("/home.html");
-        window.location.assign("/home.html");
+        window.location.assign("home.html");
    }
    else{
     //3.2 if false :::>>>> alert> wrong information 
